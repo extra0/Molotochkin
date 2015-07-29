@@ -1,3 +1,130 @@
 .header {
-
+	padding: 12px 0 0 0;
+	box-shadow: inset 0 12px 20px #F1F0F0;
+	// меню в хедере
+	&__menu {
+		display: inline-block;
+		vertical-align: top;
+		margin: 18px 0 0 89px;
+		width: 290px;
+	}
+	&__menu-list {
+		padding: 0;
+		margin: 0;
+	}
+	&__menu-item {
+		display: inline-block;
+		width: 140px;
+		margin: 0 0 8px 0;
+	}
+	&__menu-link {
+		font-size: 16px;
+		color: #141515;
+		border-bottom: 1px solid #b7b7b7;
+		line-height: 15px;
+	    display: inline-block;
+	    &:hover {
+	    	color: lighten(#141515, 10%);
+	    }
+	}
+	// кнопка калькулятора
+	&__calc-btn {
+		vertical-align: top;
+		margin: 19px 0 0 -36px;
+		line-height: 38px;
+		padding: 0 5px 0 38px;
+		display: inline-block;
+		border: 3px solid #3f6aac;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		border-radius: 5px;
+		background-color: #3f6aac;
+		background-image: url(../img/calc.png);
+		background-repeat: no-repeat;
+		background-position: 7px 5px;
+		-webkit-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		&:hover {
+			border: 3px solid ;
+			background-color: #fff;
+			color: #968d89;
+		}
+	}
+	//  блок телефона
+	&__phone-block {
+		float: right;
+		display: inline-block;
+		margin: 0 0 0 0;
+		&:after {
+			content: '';
+			display: block;
+			height: 0;
+			overflow: hidden;
+			clear: both;
+		}
+	}
+	&__phone {
+		font-family: @heavy;
+		font-size: 40px;
+		color: #353535;
+		display: block;
+		margin: 2px 4px 0 0px;
+		&:hover {
+			border-bottom: none;
+		}
+	}
+	&__phone-prefix {
+		color: #929292;
+		font-size: 16px;
+		font-family: @main_font;
+		display: inline-block;
+		margin: 15px 6px 0 0px;
+		vertical-align: top;
+	}
+	// время
+	&__time {
+		margin: -15px 0 0 49px;
+		font-size: 16px;
+		color: #262729;
+	}
+}
+// главное меню в хедере
+.main-menu {
+	&__block {
+		margin: 23px 0 0 0;
+	}
+	&__list {
+		padding: 0;
+		display: table;
+	}
+	&__item {
+		display: table-cell;
+		width: 19%;
+		&:hover {
+			.main-menu__title {
+				border-bottom: 1px solid transparent;
+			}
+		}
+	}
+	&__image {
+		display: block;
+		margin: 0 0 11px 0;
+	}
+	&__title {
+		color: #1b75d3;
+		font-size: 22px;
+		font-family: @semi-bold-it;
+		display: inline-block;
+		line-height: 22px;
+		margin: 0 0 5px 0;
+		border-bottom: 1px solid #8dbae9;
+	}
+	&__text {
+		font-size: 13px;
+		color: #0e0e0e;
+		margin: 0;
+	}
 }
