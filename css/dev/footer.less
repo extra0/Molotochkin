@@ -1,3 +1,80 @@
 .footer {
-    
+    background: #fafafa;
+    border-top: 4px solid #bb3c2c;
+    padding: 20px 0 0 0;
+    &__level-one {
+    	margin: 0;
+    	padding: 0;
+    }
+    &__item-one {
+    	display: inline-block;
+    	width: 30%;
+    	vertical-align: top;
+    	margin-bottom: 18px;
+    }
+    &__menu {
+    	width: 82%;
+    	position: relative;
+    	&:before {
+    		position: absolute;
+    		content: '';
+    		background: url(../img/footer_man.png) 0 0 no-repeat;
+    		width: 210px;
+    		height: 219px;
+    		bottom: 0px;
+    		right: 60px;
+    	}
+    }
+    &__link-one {
+    	font-size: 60%;
+    	border-bottom: 1px solid #c4d2ed;
+    }
+    &__level-second {
+    	padding-left: 10px;
+    }
+    &__link-second  {
+    	color: #383838;
+    	border-bottom: 1px solid #d3d3d3;
+    	font-size: 13px;
+    	display: inline-block;
+    	line-height: 15px;
+    }
+    &__item-second {
+    	vertical-align: top;
+    }
+    &__line {
+    	font-size: 200%;
+    	line-height: normal;
+    }
+}
+// копирайт и соц сети
+.copyright {
+	&__block {
+		float: right;
+		margin: 0 0 0 0;
+	}
+	&__develop {
+		font-size: 13px;
+		margin: 30px 0 10px 51px;
+	}
+	&__link {
+		display: inline-block;
+		line-height: 15px;
+		border-bottom: 1px solid;
+		font-size: 13px;
+	}
+	&__text {
+		margin: 0 0 0 38px;
+	}
+}
+//  соц сети 
+.yashare-auto-init {
+	margin: 30px 0 0 48px;
+	z-index: 2;
+	position: relative;
+}
+.b-share-btn__wrap a {
+	&:hover {
+		border-bottom: none;
+	}
 }

@@ -1,3 +1,105 @@
 extends _layout
 block content
-	
+	.main__map-block
+		.container
+			h1.main__title Делаем ремонты по всей 
+				img.main__title-img(src="img/star.png", alt="")
+				|  Москве!
+			p.main__map-text За 18 лет работы мы сделали ремонты в 
+				span.main__counter 0
+				span.main__counter 6
+				span.main__counter 4
+				span.main__counter 9
+				span.main__counter 1
+				span.main__counter 7
+				|  квартирах в Москве и Московской области
+		.main__map-wrap
+			.main__map-stage
+				#map
+					<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Yer8YQDee4DEjQfU2MBbAOYgOLhjTU6H"></script>
+	.main__block
+		.container
+			.main__inner._widthM
+				h2.main__second-title 
+					span.main__text-red Молоточкин
+					|  делает феноменально качественные ремонты за сказочно доступные цены.
+				p.main__text Мы любим свою работу и делаем ее с максимальной ответственностью. Все наши сотрудники — высоко квалифицированные специалисты. И мы всегда отвечаем за указаныне сроки. Молоточкин — ваш выбор.
+			.calc__block
+				a.calc__title(href="#")
+					span.calc__line Рассчитать стоимость ремонта
+				p.calc__text Узнайте стоимость своих будущих окон сразу. Вы увидите весь процесс формирования цены от замеров до установки.
+	.advantages__block
+		.container
+			ul.advantages__list
+				li.advantages__item
+					img.advantages__image(src="img/adv_img1.png", alt="")
+					h3.advantages__title комплексный подход
+					p.advantages__text Наши сотрудники постоянно обучаются, за их работой ведется постоянный контроль качества. Поэтому они, как и наши потолки.
+				li.advantages__item
+					img.advantages__image(src="img/adv_img2.png", alt="")
+					h3.advantages__title прямые руки
+					p.advantages__text Мы работаем официально, с гарантией качества своих услуг не только в устной форме, но и на бумаге. Мы всегда заканчиваем начатое.
+				li.advantages__item
+					img.advantages__image(src="img/adv_img3.png", alt="")
+					h3.advantages__title ТОЧНО В СРОК
+					p.advantages__text Соблюдаем заявленные сроки. Всегда! «Завтра» — это на следующий день и никак иначе. Мы же не сайты делаем, там это нормально.
+				li.advantages__item
+					img.advantages__image(src="img/adv_img4.png", alt="")
+					h3.advantages__title Справедливая цена
+					p.advantages__text Мы всегда готовы ответить на ваши вопросы. Даже если потолки поставили вам давно, поставили не мы, или еще не поставили :)
+	.content__block
+		.container
+			.preview__feedback
+				img.preview__feedback-img(src="img/family.png", alt="")
+				h2.main__second-title 
+					a.main__title-link(href="#") 
+						span.main__title-line Отзывы клиентов
+				p.preview__feedback-text Давно искала возможность поменять дома потолок. Особенно беспокоил потолок на кухне, который буквально осыпал меня побелкой, когда я готовила… Пришло время! Я бы даже сказала, пришел Потолочкин! :) Большое спасибо!
+				.preview__autor-block
+					p.preview__autor Семья Петровых
+					p.preview__autor-text сделали 
+						a.preview__autor-link(href="#") комплексный ремонт
+						|  за 24 000 Р
+			.base__block
+				h2.main__second-title 
+					a.main__title-link(href="#")
+						span.main__title-line База знаний
+				.base__inner
+					.base__item
+						a.base__main-link(href="#")
+							img.base__image(src="img/content/bk.jpg", alt="")
+							span.base__line Узнайте стоимость своих будущих окон сразу
+						p.base__text Вы увидите весь процесс формирования цены от замеров до установки.
+					.base__item
+						a.base__link(href="#") 
+							span.base__line Вы увидите весь процесс формирования цены от замеров до установки
+					.base__item
+						a.base__link(href="#") 
+							span.base__line Процесс формирования цены от замеров до установки. Формирования цены от замеров до установки
+			.slider__block
+				h2.main__second-title Нам есть что показать
+				ul.slider__list
+					li.slider__item
+						a.slider__link.fancy(href="img/content/slide_img1.jpg")
+							img.slider__img(src="img/content/slide_img1.jpg", alt="")
+					li.slider__item
+						a.slider__link(href="#")
+							img.slider__img(src="img/content/slide_img1.jpg", alt="")
+					li.slider__item
+						a.slider__link(href="#")
+							img.slider__img(src="img/content/slide_img2.jpg", alt="")
+					li.slider__item
+						a.slider__link(href="#")
+							img.slider__img(src="img/content/slide_img1.jpg", alt="")
+					li.slider__item
+						a.slider__link(href="#")
+							img.slider__img(src="img/content/slide_img2.jpg", alt="")
+					li.slider__item
+						a.slider__link(href="#")
+							img.slider__img(src="img/content/slide_img1.jpg", alt="")
+			.action__block
+				p.action__big-title Чего тут думать?
+				h2.main__second-title 20% скидка только 5 дней! 
+					span.main__text-red Осталось
+				p.action__text Оставьте заявку и наши менеджеры свяжутся с вами в ближайшее<br>время для уточнения деталей, а так же для согласования<br>специального предложения
+				a.action__btn(href="#") - Алло, Молоточкин!?
