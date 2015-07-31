@@ -25,6 +25,9 @@ $(function() {
 	// модальные окна
 	$('.fancy').fancybox();
 
+	// маска на телефон
+	$('.mask').mask('+7 (999) 999-99-99');
+
 	// яндекс карта 
 	ymaps.ready(function() {
 		var myMap = new ymaps.Map('map', {
@@ -76,7 +79,7 @@ $(function() {
 	// расчет калькулятора
 	var input = $('.cost__input'),
 		total = $('.cost__price'),
-		select = parseInt($('.cost__select :selected').val()),
+		select = $('.cost__select'),
 		summ = 0;
 
 	function calc() {
@@ -89,13 +92,13 @@ $(function() {
 
 	input.keyup('change', function(){
 		summ = 0;
-		$('.cost__select').each(function(){
+		select.each(function(){
 			summ += parseInt($(this).val());
 		});
 		calc();
 	});
 
-	$('.cost__select').change(function(){
+	select.change(function(){
 		summ = 0;
 		summ += parseInt($(this).val());
 		calc();

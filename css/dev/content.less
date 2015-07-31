@@ -214,8 +214,13 @@
 		background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(231,231,231,1) 100%); /* IE10+ */
 		background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(231,231,231,1) 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
-
 	}
+	&__link {
+		border-bottom: 1px dotted;
+		line-height: 22px;
+		font-size: 50%;
+	}
+
 }
 // карта
 #map {
@@ -667,6 +672,7 @@
 		display: inline-block;
 		width: 24%;
 		margin-right: 8%;
+		vertical-align: top;
 	}
 	&__image {
 		margin: 0 0 20px 0;
@@ -690,6 +696,48 @@
 		display: inline-block;
 		line-height: 20px;
 		margin: 0 20px 15px 0px;
+	}
+	&__contact {
+		position: relative;
+		margin: 20px 0 40px 0;
+		&:before {
+			position: absolute;
+			content: '';
+			background: url(../img/contact_bg.png) 0 0 no-repeat;
+			width: 286px;
+			height: 113px;
+			top: -7px;
+			left: -25px;
+			z-index: -1;
+		}
+	}
+	&__prefix {
+		font-size: 16px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 15px 7px 0 0;
+		color: #919191;
+		font-family: @main_font;
+	}
+	&__phone {
+		font-size: 40px;
+		font-family: @heavy;
+		color: #383838;
+		margin: 0;
+		display: block;
+		&:hover {
+			border-bottom: none;
+		}
+	}
+	&__email {
+		border-bottom: 1px solid;
+		line-height: 18px;
+		font-size: 16px;
+		display: inline-block;
+	}
+	&__service {
+		font-size: 18px;
+		margin: 0 0 10px;
 	}
 }
 // правый блок с фото
