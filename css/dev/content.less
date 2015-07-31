@@ -415,6 +415,11 @@
 #timerb3875700c29afd87f43ed6cefa354c40 .timer-flipchart-face {
 	font-family: @unisans!important;
 }
+// стилизация рубля
+.rubl {
+    font-style: normal;
+    font-family: 'Rubl';
+}
 
 // страница вопрос-ответ 
 .calculate {
@@ -432,7 +437,7 @@
 		color: #fff;
 	}
 	&__progress-block {
-		width: 99.385%;
+		width: 99.4%;
 		overflow: hidden;
 		background: url(../img/not_ok.png) repeat-x;
 		position: relative;
@@ -462,27 +467,47 @@
 		margin-bottom: 40px;
 		width: 879px;
 		margin: 14px 0 28px -30px;
-		min-height: 289px;
+		height: 289px;
+		overflow: hidden;
+		padding: 1em 41px 3em 106px;
 		display: inline-block;
 		vertical-align: top;
+		box-sizing: border-box;
 		&._question {
 			background: url(../img/quest_text_bg.png) 0 0 no-repeat;
 			box-sizing: border-box;
-			padding: 1em 10px 3em 80px;
 			text-align: center;
 		}
+		&._answer {
+			background: url(../img/answer_text-bg.png) 0 0 no-repeat;
+			padding: 2em 60px 3em 106px;
+		}
 	}
-	&__inner-text {
+	&__inner-title {
 		font-size: 40px;
 		font-weight: 600;
 		line-height: 59px;
 		i {
 			font-weight: 400;
 		}
+		&._margin-line {
+			margin: 15px 0;
+			line-height: 44px;
+		}
+	}
+	&__red {
+		color: #dd3f2b;
+	}
+	&__regular {
+		font-weight: 400;
+	}
+	&__inner-text {
+		font-size: 16px;
+		margin: 0;
 	}
 	//  кнопки под вопросом/ответом
 	&__btn-block {
-		float: right;
+		display: inline-block;
 	}
 	&__btn {
 		color: #fff;
@@ -513,6 +538,10 @@
 			&:hover {
 				background: lighten(#ececec, 10%);
 			}
+		}
+		&._large {
+			width: auto;
+			padding: 0 30px;
 		}
 	}
 }
