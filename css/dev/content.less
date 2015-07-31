@@ -8,6 +8,9 @@
 		font-size: 50px;
 		font-family: @heavy;
 		margin: 0;
+		&._white {
+			color: #fff;
+		}
 	}
 	&__title-link {
 		color: #020202;
@@ -357,6 +360,7 @@
 		}
 	}
 }
+
 //  блок акции 
 .action {
 	&__block {
@@ -406,6 +410,109 @@
 		}
 	}
 }
+
+// стили для счетчика
 #timerb3875700c29afd87f43ed6cefa354c40 .timer-flipchart-face {
 	font-family: @unisans!important;
+}
+
+// страница вопрос-ответ 
+.calculate {
+	&__block {
+		margin-top: -17px;
+		padding: 26px 0 51px 0;
+		position: relative;
+		background: url(../img/quest_bg.jpg) 0 0 no-repeat;
+		background-size: cover;
+	}
+	&__text {
+		font-size: 18px;
+		text-shadow: 1px 1px #3d7ca1;
+		margin: -4px 0 36px 0;
+		color: #fff;
+	}
+	&__progress-block {
+		width: 99.385%;
+		overflow: hidden;
+		background: url(../img/not_ok.png) repeat-x;
+		position: relative;
+		height: 38px;
+		margin-bottom: 27px;
+	}
+	&__progress-line {
+		width: 25%;
+		height: 38px;
+		background: url(../img/ok.png) repeat-x;
+	}
+	&__qa-area {
+		position: relative;
+		&:after {
+			content: '';
+			clear: both;
+			height: 0;
+			width: 0;
+			display: block;
+		}
+	}
+	&__image {
+		float: left;
+		margin: 0 20px 20px -27px;
+	}
+	&__inner {
+		margin-bottom: 40px;
+		width: 879px;
+		margin: 14px 0 28px -30px;
+		min-height: 289px;
+		display: inline-block;
+		vertical-align: top;
+		&._question {
+			background: url(../img/quest_text_bg.png) 0 0 no-repeat;
+			box-sizing: border-box;
+			padding: 1em 10px 3em 80px;
+			text-align: center;
+		}
+	}
+	&__inner-text {
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 59px;
+		i {
+			font-weight: 400;
+		}
+	}
+	//  кнопки под вопросом/ответом
+	&__btn-block {
+		float: right;
+	}
+	&__btn {
+		color: #fff;
+		display: inline-block;
+		font-size: 22px;
+		font-weight: 600;
+		text-align: center;
+		// padding: 0 37px;
+		width: 284px;
+		margin-left: 27px;
+		border-radius: 10px;
+		border: 4px solid #ececec;
+		box-shadow: 5px 5px 0px #4292cb;
+		line-height: 67px;
+		background: #dd3f2b;
+		-webkit-transition: background 0.4s ease;
+		-o-transition: background 0.4s ease;
+		-moz-transition: background 0.4s ease;
+		transition: background 0.4s ease;
+		&:hover {
+			border-bottom: 4px solid #ececec;
+			background: darken(#dd3f2b, 10%);
+		}
+		&._invers {
+			border: 4px solid #dd3f2b;
+			color: #dd3f2b;
+			background: #ececec;
+			&:hover {
+				background: lighten(#ececec, 10%);
+			}
+		}
+	}
 }
