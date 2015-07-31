@@ -7,7 +7,7 @@
 	&__title {
 		font-size: 50px;
 		font-family: @heavy;
-		margin: 0;
+		margin: 0 0 40px 0;
 		&._white {
 			color: #fff;
 		}
@@ -104,6 +104,10 @@
 	// универсальные блоки с текстом
 	&__inner {
 		display: inline-block;
+		position: relative;
+		width: 840px;
+		padding-left: @padleft;
+		box-sizing: border-box;
 		&._widthM {
 			width: 700px;
 		}
@@ -123,7 +127,7 @@
 		}
 	}
 	&__text {
-		margin: 0 0 0 69px;
+		margin: 0 0 30px 0;
 		font-size: 22px;
 	}
 	&__line {
@@ -377,6 +381,9 @@
 			top: 4px;
 			left: -76px;
 			z-index: 0;
+			right: 0;
+			display: block;
+			margin: auto;
 		}
 	}
 	&__big-title {
@@ -433,7 +440,7 @@
 	&__text {
 		font-size: 18px;
 		text-shadow: 1px 1px #3d7ca1;
-		margin: -4px 0 36px 0;
+		margin: -44px 0 36px 0;
 		color: #fff;
 	}
 	&__progress-block {
@@ -543,5 +550,169 @@
 			width: auto;
 			padding: 0 30px;
 		}
+	}
+}
+//  широкая картинка
+.timeline {
+	&__block {
+		position: relative;
+		min-height: 360px;
+	}
+	&__image {
+		position: absolute;
+		top: -190px;
+		max-width: 1920px;
+		left: 0;
+		right: 0;
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+}
+// блок с персоналом
+.people {
+	&__block {
+		margin-bottom: 83px;
+	}
+	&__list {
+		margin: 60px 0 40px 0;
+		padding: 0 0 0 69px;
+	}
+	&__inner {
+		padding-left: @padleft;
+	}
+	&__item {
+		display: inline-block;
+		width: 24%;
+		margin-right: 8%;
+	}
+	&__image {
+		margin: 0 0 20px 0;
+	}
+	&__name {
+		font-size: 24px;
+		margin: 0 0 -5px 0;
+		font-weight: bold;
+	}
+	&__post {
+		font-size: 20px;
+		color: #8e8e8e;
+		margin: 0;
+	}
+	&__link-block {
+		margin: 30px 0 0 0;
+	}
+	&__link {
+		font-size: 20px;
+		border-bottom: 1px solid;
+		display: inline-block;
+		line-height: 20px;
+		margin: 0 20px 15px 0px;
+	}
+}
+// правый блок с фото
+.side {
+	&__block {
+		float: right;
+		box-sizing: border-box;
+		width: 255px;
+	    margin: 0 -89px 0px 10px;
+	}
+	&__image {
+		border-radius: 50%;
+		max-width: 232px;
+		max-height: 232px;
+	}
+	&__text {
+		font-family: 'Flow';
+		color: #fd0002;
+		font-size: 20px;
+		text-align: center;
+	}
+	&__link {
+		border-bottom: 1px solid;
+		font-size: 50%;
+	}
+	&__line {
+		line-height: normal;
+		font-size: 200%;
+	}
+}
+//  блок с партнерами
+.partner  {
+	&__block {
+		margin-bottom: 104px;
+	}
+	&__list {
+		padding: 40px 120px 0 69px;
+	}
+	&__img {
+		vertical-align: top;
+		display: inline-block;
+		margin: 0 30px 40px 0;
+	}
+	&__link {
+		border-bottom: 1px dotted;
+		font-size: 20px;
+		line-height: 20px;
+		display: inline-block;
+	}
+}
+// отзывы
+.feedback {
+	&__block {
+		margin-bottom: 112px;
+	}
+	&__list {
+		padding-left: @padleft;
+		margin-top: 30px;
+	}
+	&__item {
+		position: relative;
+		display: inline-block;
+		margin-right: 2%;
+		vertical-align: top;
+		padding: 20px;
+		box-sizing: border-box;
+		width: 314px;
+		border-radius: 25px;
+		background: #f0f0f0;
+	}
+	&__text {
+		font-weight: 300;
+		font-style: italic;
+		font-size: 16px;
+	}
+	&__autor-block {
+		width: 177px;
+		position: absolute;
+		bottom: -66px;
+		right: 18px;
+		text-align: right;
+	}
+	&__autor-img {
+		// float: right;
+		margin: 0 0 -8px 0;
+	}
+	&__autor-name {
+		font-size: 13px;
+		margin: 0;
+		text-align: left;
+	}
+	&__autor-text {
+		color: #989898;
+		font-size: 13px;
+		margin: -4px 0 0 0;
+		text-align: left;
+		line-height: 7px;
+	}
+	&__autor-link {
+		font-size: 49%;
+		color: #989898;
+		border-bottom: 1px solid;
+	}
+	&__line {
+		line-height: normal;
+		font-size: 200%;
 	}
 }

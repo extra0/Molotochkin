@@ -1,25 +1,26 @@
 extends _layout
 block content
-	.calculate__block
-		.container
-			h2.main__title._white Рассчет примерной стоимости наших услуг
-			p.calculate__text Точная стоимость зависит от многих факторов, и может отличаться от вышеуказанной цены на 20%. Мы можем оценить точную стоимость вашего ремонта только после вызова специалиста на объект. 
-			.calculate__progress-block
-				.calculate__progress-line(style="width: 100%;")
-			.calculate__qa-area
-				img.calculate__image(src="img/quest_man.png", alt="")
-				.calculate__inner._answer
-					p.calculate__inner-text Ответили на все вопросы? Ну разве вы не шикарны?! 
-					p.calculate__inner-title._margin-line
-						span.calculate__regular Выходит, что 
-						| ваш ремонт будет стоить примерно 
-						span.calculate__red 21 433 
-							<i class="rubl">a</i>
-					p.calculate__inner-text К слову, это на 
-						span.calculate__red 20% дешевле 
-						| , чем у конкурентов.
-					p.calculate__inner-text А если вы оформите заказ прямо сейчас, то мы 
-						span.calculate__red еще 5% скинем
-						| . По рукам?
-				.calculate__btn-block
-					a.calculate__btn._large(href="#") Да, оформить заказ и получить скидку!
+	.main__section
+		.calculate__block
+			.container
+				h2.main__title._white Рассчет примерной стоимости наших услуг
+				p.calculate__text Точная стоимость зависит от многих факторов, и может отличаться от вышеуказанной цены на 20%. Мы можем оценить точную стоимость вашего ремонта только после вызова специалиста на объект. 
+				.calculate__progress-block
+					.calculate__progress-line(style="width: 100%;")
+				.calculate__qa-area
+					img.calculate__image(src="img/quest_man.png", alt="")
+					.calculate__inner._answer
+						p.calculate__inner-text Ответили на все вопросы? Ну разве вы не шикарны?! 
+						p.calculate__inner-title._margin-line
+							span.calculate__regular Выходит, что 
+							| ваш ремонт будет стоить примерно 
+							span.calculate__red 21 433 
+								<i class="rubl">a</i>
+						p.calculate__inner-text К слову, это на 
+							span.calculate__red 20% дешевле 
+							| , чем у конкурентов.
+						p.calculate__inner-text А если вы оформите заказ прямо сейчас, то мы 
+							span.calculate__red еще 5% скинем
+							| . По рукам?
+					.calculate__btn-block
+						a.calculate__btn._large(href="#") Да, оформить заказ и получить скидку!
