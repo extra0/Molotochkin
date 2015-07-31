@@ -1,0 +1,133 @@
+extends _layout
+block content
+	.main__section
+		.container
+			h1.main__title._upper мега супер ПОТОЛКи от молоточкина
+			.main__category
+				a.main__category-link(href="#") Побелка
+				span.main__category-active(href="#") Натяжные
+				a.main__category-link(href="#") Покраска
+				a.main__category-link(href="#") Клеевые
+				a.main__category-link(href="#") Подвесные
+				a.main__category-link(href="#") Из гипсокартона
+				a.main__category-link(href="#") Реечные
+			.main__inner
+				p.main__text Мы любим свою работу и делаем ее с максимальной ответственностью. Все наши сотрудники — высоко квалифицированные специалисты. И мы всегда отвечаем за указаныне сроки. Молоточкин — ваш выбор. 
+				p.main__text Мы работаем официально, с гарантией качества своих услуг не только в устной форме, но и на бумаге. Мы никуда не пропадаем и всегда заканчиваем начатое.
+			img.main__img(src="img/content/main_img.jpg", alt="")
+			.main__inner
+				p.main__text Мы любим свою работу и делаем ее с максимальной ответственностью. Все наши сотрудники — высоко квалифицированные специалисты. И мы всегда отвечаем за указаныне сроки. Молоточкин — ваш выбор. 
+				p.main__text Мы работаем официально, с гарантией качества своих услуг не только в устной форме, но и на бумаге. Мы никуда не пропадаем и всегда заканчиваем начатое.
+			.cost__block
+				img.cost__img(src="img/calc_man.png", alt="")
+				h2.main__second-title Рассчитайте примерную стоимость
+				.cost__inner
+					form.cost__form(action="#" method="post")
+						.cost__data
+							table.cost__table
+								tbody
+									tr.cost__table-line
+										td.cost__table-item
+											p.cost__text Площадь потолка:
+										td.cost__table-item
+											input.cost__input(type="text" data-val="10")
+											p.cost__text м<sup>2</sup>
+									tr.cost__table-line
+										td.cost__table-item
+											p.cost__text Cветильников:
+										td.cost__table-item
+											input.cost__input._half(type="text" data-val="100")
+											p.cost__text шт.
+									tr.cost__table-line
+										td.cost__table-item(colspan="2")
+											select.cost__select(name="")
+												option(value="2") Выберите материал 
+												option(value="2") Цемент
+												option(value="2") Цемент
+												option(value="2") Цемент
+												option(value="2") Цемент
+												option(value="2") Цемент
+												option(value="2" data-val="2") Цемент
+						.cost__result
+							p.cost__title Примерная стоимость: 
+							span.cost__price 9400
+							i.cost__currency.rubl a
+							a.cost__btn(href="#") Заказать
+			.main__inner
+				p.main__text Мы любим свою работу и делаем ее с максимальной ответственностью. Все наши сотрудники — высоко квалифицированные специалисты. И мы всегда отвечаем за указаныне сроки. Молоточкин — ваш выбор. 
+			.main__extra-block
+				h2.main__second-title Разнообразие материалов потолка
+				.main__inner
+					p.main__text Мы любим свою работу и делаем ее с максимальной ответственностью. Все наши сотрудники — высоко квалифицированные специалисты. И мы всегда отвечаем за указаныне сроки. Молоточкин — ваш выбор.
+				ul.main__extra-list
+					li.main__extra-item
+						img.main__extra-img(src="img/content/list.jpg", alt="")
+						p.main__extra-text CeilBlanc (Россия) - достойный экономичный вариант. Отлично подходит для небольших квартир, для квартир CeilBlanc (Россия) - достойный экономичный вариант. Отлично подходит для небольших квартир, для квартир
+					li.main__extra-item
+						img.main__extra-img(src="img/content/list.jpg", alt="")
+						p.main__extra-text CeilBlanc (Россия) - достойный экономичный вариант. Отлично подходит для небольших квартир, для квартир CeilBlanc (Россия) - достойный экономичный вариант. Отлично подходит для небольших квартир, для квартир
+					li.main__extra-item
+						img.main__extra-img(src="img/content/list.jpg", alt="")
+						p.main__extra-text CeilBlanc (Россия) - достойный экономичный вариант. Отлично подходит для небольших квартир, для квартир
+					li.main__extra-item
+						img.main__extra-img(src="img/content/list.jpg", alt="")
+						p.main__extra-text CeilBlanc (Россия) - достойный экономичный вариант. Отлично подходит для небольших квартир, для квартир
+					li.main__extra-item
+						img.main__extra-img(src="img/content/list.jpg", alt="")
+						p.main__extra-text CeilBlanc (Россия) - достойный экономичный вариант. Отлично подходит для небольших квартир, для квартир
+				.partner__list
+					img.partner__img(src="img/content/brand_1.jpg", alt="")
+					img.partner__img(src="img/content/brand_2.jpg", alt="")
+					img.partner__img(src="img/content/brand_1.jpg", alt="")
+					img.partner__img(src="img/content/brand_2.jpg", alt="")
+					img.partner__img(src="img/content/brand_1.jpg", alt="")
+					img.partner__img(src="img/content/brand_2.jpg", alt="")
+				.main__inner
+					p.main__text Мы любим свою работу и делаем ее с максимальной ответственностью. Все наши сотрудники — высоко квалифицированные специалисты. И мы всегда отвечаем за указаныне сроки. Молоточкин — ваш выбор.
+			.feedback__block
+				h2.main__second-title Отзывы наших клиентов
+				.feedback__list
+					.feedback__item
+						p.feedback__text Денег пока особо не много, еще учусь, но жить хочется уже сейчас. Очень понравился подход в Потолочкине! Девушка из кол-центра вошла в мое положение и подобрала не самый дешевый, но самый правильный вариант за доступные деньги. Очень радушно и по-дружески я бы сказала. Теперь не только новый потолок, но и маленький Потолочкин в виде магнитика на холодильник поселился у меня дома! Спасибо!
+						.feedback__autor-block
+							img.feedback__autor-img(src="img/content/ava.png", alt="")
+							p.feedback__autor-name Иван Снегов
+							p.feedback__autor-text заказала 
+								a.feedback__autor-link(href="#") 
+									span.feedback__line натяжной потолок 
+								| за 57 000 <i class="rubl">a</i>
+					.feedback__item
+						p.feedback__text Денег пока особо не много, еще учусь, но жить х
+						.feedback__autor-block
+							img.feedback__autor-img(src="img/content/ava.png", alt="")
+							p.feedback__autor-name Иван Снегов
+							p.feedback__autor-text заказала 
+								a.feedback__autor-link(href="#") 
+									span.feedback__line натяжной потолок 
+								| за 57 000 <i class="rubl">a</i>
+					.feedback__item
+						p.feedback__text Денег пока особо не много, еще учусь, но жить хочется уже сейчас. Очень понравился подход в Потолочкине! Девушка из кол-центра вошла в мое положение и подобрала не самый дешевый, но самый правильный вариант за доступные деньги. Очень радушно и по-дружески я бы сказала. Теперь не только новый потолок, но и маленький Потолочкин в виде магнитика на холодильник поселился у меня дома! Спасибо! 					 дешевый, но самый правильный вариант за доступные деньги. Очень радушно и по-дружески я бы сказала. Теперь не только новый потолок, но и маленький Потолочкин в виде магнитика на холодильник поселился у меня дома! Спасибо!
+						.feedback__autor-block
+							img.feedback__autor-img(src="img/content/ava.png", alt="")
+							p.feedback__autor-name Иван Снегов
+							p.feedback__autor-text заказала 
+								a.feedback__autor-link(href="#") 
+									span.feedback__line натяжной потолок 
+								| за 57 000 <i class="rubl">a</i>
+			.main__extra-block
+				h2.main__second-title Вопросы и ответы
+				img.main__img._floatR(src="img/right_man.png", alt="")
+				.main__inner
+					ul.main__list
+						li.main__item._strong Можно ли сделать ремонт в квартире без отделки?
+						li.main__item Да. Базовая комплектация нашего ремонта включает необходимые черновые работы.
+						li.main__item._strong Можно ли объединить комнату и балкон?
+						li.main__item К сожалению, нет. При изменении объема помещения требуются больше тепловой мощности для отопления, стандартные тепловые сети типовых домов на это не рассчитаны.
+						li.main__item._strong Ставите ли кухонную мебель?
+						li.main__item Пока что нет. Мы делаем на кухне выводы под воду, канализацию, а также устанавливаем розетки и выкладываем фартук из плитки.
+			.action__block
+				p.action__big-title Чего тут думать?
+				h2.main__second-title 20% скидка только 5 дней! 
+					span.main__text-red Осталось <script src="http://megatimer.ru/s/b3875700c29afd87f43ed6cefa354c40.js"></script>
+				p.action__text Оставьте заявку и наши менеджеры свяжутся с вами в ближайшее<br>время для уточнения деталей, а так же для согласования<br>специального предложения
+				a.action__btn(href="#") - Алло, Молоточкин!?

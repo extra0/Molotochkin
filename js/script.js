@@ -29,9 +29,9 @@ $(function() {
 				iconImageSize: [29, 33],
 				iconImageOffset: [-3, -33]
 			});
-			myMap.behaviors.disable('scrollZoom');
+		myMap.behaviors.disable('scrollZoom');
 
-			myMap.geoObjects
+		myMap.geoObjects
 			.add(new ymaps.Placemark([55.777697023347606, 37.70197299999995], {
 				hintContent: 'Собственный значок метки'
 			}, {
@@ -59,5 +59,9 @@ $(function() {
 
 		myMap.geoObjects.add(myPlacemark);
 	});
+
+	// расчет калькулятора
+	
+		
 
 });
