@@ -1,4 +1,17 @@
 $(function() {
+
+	// ф-я разбивки на разряды
+	function numberWithCommas(x) {
+		return x.toString().replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g, "\$1 ");
+	}
+
+	//только цифры и точка в odds
+	$('.cost__input').bind("change keyup input click", function() {
+		if (this.value.match(/[^0-9\.]/g, '')) {
+			this.value = this.value.replace(/[^0-9]/g, '');
+		}
+	});
+
 	// вызов слайдера
 	$('.slider__list').bxSlider({
 		pager: false,
@@ -61,7 +74,31 @@ $(function() {
 	});
 
 	// расчет калькулятора
-	
-		
+	var input = $('.cost__input'),
+		total = $('.cost__price'),
+		select = parseInt($('.cost__select :selected').val()),
+		summ = 0;
 
+	function calc() {
+		input.each(function(){
+			summ += $(this).val() * $(this).attr('data-val');
+		});
+		total.html(summ);
+		total.html(numberWithCommas(total.html()));
+	}
+
+	input.keyup('change', function(){
+		summ = 0;
+		$('.cost__select').each(function(){
+			summ += parseInt($(this).val());
+		});
+		calc();
+	});
+
+	$('.cost__select').change(function(){
+		summ = 0;
+		summ += parseInt($(this).val());
+		calc();
+	});
+		
 });
