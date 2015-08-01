@@ -103,5 +103,17 @@ $(function() {
 		summ += parseInt($(this).val());
 		calc();
 	});
+	
+
+	// меняем карту и форму местами в контактах
+	$('.change').click(function(){
+		if ($('.local-form__local-section').is(':visible')) {
+			$('.freecall__change').html('Пишите, не стесняйтесь');
+		} else {
+			$('.freecall__change').html('Тут Вы узнаете где находится Молоточкин');
+		}
 		
+		$('.local-form__local-section').slideToggle(500);
+		$('.local-form__form-section').slideToggle(500);
+	});
 });

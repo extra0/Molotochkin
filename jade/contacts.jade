@@ -3,15 +3,53 @@ block content
 	.main__section
 		.container
 			h1.main__title._upper Контакты
-			.side__block
-				
 			.main__inner
 				p.main__text Если у вас много вопросов, то не стоит откладывать их в долгий ящих. В ваших руках телефоны, адреса, e-mail, контакты наших менеджеров и 
 					a.main__link(href="#") 
 						span.main__line форма обратной связи
 					| , пользуйтесь этим, ведь мы живём в 21 веке.
-
-
+		.freecall__block
+			.container
+				.freecall__inner
+					h2.main__second-title._sizeL Бесплатный вызов замерщика
+					p.freecall__text 100% оценка вашего комплексного ремонта или монтажа оконных систем и потолка, в целом кто вам нужен определит наш менеджер
+					form.freecall__form(action="#" method="post")
+						input.freecall__input.mask(type="text" required placeholder="Ваш номер телефона")
+						button.freecall__btn(type="submit") Вызвать
+				h2.main__second-title.freecall__change Тут Вы узнаете где находится Молоточкин
+		.local-form__block
+			.local-form__sky-top
+			.local-form__sky-bottom
+			.local-form__local-section#map
+				.container
+					.local-form__shadow
+					.local-form__modal
+						p.local-form__text Звоните и приходите в гости
+						p.local-form__text каждый будний день с 8<sup>:00</sup> до 19<sup>:00</sup>
+						.local-form__address
+							p.local-form__text Россия, 105066, Москва
+							p.local-form__text._strong ул. Александра Лукьянова, д. 3
+						p.local-form__text +7 812
+						span.local-form__phone(onclick="window.location.href='tel:+78126434407';") 643-44-07
+						span.local-form__text._marg или
+						button.local-form__call.change(type="button") Позвоните мне
+						p.local-form__text Пишите
+						a.local-form__email(href="mailto:welove@molotochkin.ru") welove@molotochkin.ru
+			.local-form__form-section
+				.container
+					span.local-form__close.change
+					h2.main__second-title._whiteUpper Обратная связь
+					p.local-form__form-text Если вам долго отвечают на ваше сообщение терроризируйте сразу наших менеджеров, вдруг это просто техническая не поладка, а вы без ответа.
+					form.local-form__form
+						.local-form__half-block
+							input.local-form__input(type="text" required placeholder="Ваше имя")
+							input.local-form__input(type="email" required placeholder="Ваша электронная почта")
+							input.local-form__input(type="text" required placeholder="Тема сообщения")
+						.local-form__half-block
+							textarea.local-form__message(required placeholder="Ваше сообщение")
+						.local-form__center
+							button.local-form__submit(type="submit") Отправить
+		.container
 			.people__block
 				h2.main__second-title Наши менеджеры
 				ul.people__list

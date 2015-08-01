@@ -13,6 +13,7 @@
 		}
 		&._upper {
 			text-transform: uppercase;
+			font-size: 60px;
 		}
 	}
 	&__title-link {
@@ -123,6 +124,13 @@
 		font-family: @heavy;
 		margin: 0 0 18px 0;
 		line-height: 48px;
+		&._sizeL {
+			font-size: 60px;
+		}
+		&._whiteUpper {
+			text-transform: uppercase;
+			color: #fff;
+		}
 		div {
 			display: inline-block;
 			vertical-align: middle;
@@ -609,7 +617,6 @@
 		font-size: 22px;
 		font-weight: 600;
 		text-align: center;
-		// padding: 0 37px;
 		width: 284px;
 		margin-left: 27px;
 		border-radius: 10px;
@@ -964,5 +971,318 @@
 	&__currency {
 		font-size: 40px;
 		font-weight: 500;
+	}
+}
+
+// бесплатный вызов замерщика
+.freecall {
+	&__block {
+		background: #fafafa;
+		padding: 43px 0 10px 0;
+	}
+	&__text {
+		font-size: 24px;
+		margin: 28px 0 42px 0;
+		padding: 0 84px;
+		line-height: 35px;
+	}
+	&__input {
+		width: 43%;
+		border: 3px solid #bb3c2c;
+		border-radius: 8px;
+		padding: 0 25px;
+		box-sizing: border-box;
+		color: #9d9d9d;
+		line-height: 62px;
+		background: transparent;
+		outline: none;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	&__inner {
+		padding: 11px 0;
+		position: relative;
+		text-align: center;
+		margin-bottom: 120px;
+		&:before {
+			position: absolute;
+			content: '';
+			background: url(../img/height.png) 0px 0px no-repeat;
+			width: 153px;
+			height: 273px;
+			top: 0px;
+			left: -70px;
+		}
+	}
+	&__btn {
+		color: #fff;
+		display: inline-block;
+		font-size: 22px;
+		font-weight: 600;
+		text-align: center;
+		width: 226px;
+		margin-left: 27px;
+		border-radius: 10px;
+		border: 4px solid #ececec;
+		box-shadow: 5px 5px 0px #e1e1e1;
+		position: relative;
+		line-height: 67px;
+		background: #dd3f2b;
+		-webkit-transition: background 0.4s ease;
+		-o-transition: background 0.4s ease;
+		-moz-transition: background 0.4s ease;
+		transition: background 0.4s ease;
+		&:hover {
+			border-bottom: 4px solid #ececec;
+			background: darken(#dd3f2b, 10%);
+		}
+		&:before {
+			position: absolute;
+			content: '';
+			background: url(../img/width.png) 0 0 no-repeat;
+			width: 220px;
+			height: 57px;
+			bottom: -71px;
+			left: 0px;
+		}
+	}
+	&__change {
+		position: relative;
+		z-index: 10;
+		-webkit-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		&:before {
+			position: absolute;
+			content: '';
+			background: url(../img/circle_arrow.png) 0 0 no-repeat;
+			width: 82px;
+			height: 133px;
+			top: 29px;
+			left: -46px;
+			z-index: 50;
+		}
+	}
+}
+// карта с формой 
+.local-form {
+	&__block {
+		width: 100%;
+		height: 737px;
+		position: relative;
+		margin: 0 auto 73px auto;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0px;
+			left: 0;
+			width: 100%;
+			height: 16px;
+			box-shadow: inset 0px 9px 12px rgba(117, 117, 117, 0.4);
+		}
+	}
+	&__sky-top {
+		position: absolute;
+		content: '';
+		background: url(../img/sky_top.png) 0 0 no-repeat;
+		width: 100%;
+		height: 300px;
+		top: -149px;
+		left: 0;
+		z-index: 1;
+	}
+	&__sky-bottom {
+		position: absolute;
+		content: '';
+		background: url(../img/sky_bottom.png) 0 0 no-repeat;
+		width: 100%;
+		height: 366px;
+		bottom: -233px;
+		left: 0;
+		z-index: 1;
+	}
+	&__modal {
+		border: 2px solid #fcfcfc;
+		width: 455px;
+		height: 364px;
+		position: absolute;
+		top: 61px;
+		left: @padleft;
+		background: #f5f5f5;
+		padding: 44px 6px 44px 33px;
+		box-sizing: border-box;
+		border-radius: 38px;
+		z-index: 3;
+	}
+	&__shadow {
+		position: absolute;
+		background: url(../img/modal_shadow.png) 0 0 no-repeat;
+		width: 625px;
+		height: 529px;
+		top: -24px;
+		left: -8px;
+		z-index: 2;
+	}
+	&__address {
+		margin: 25px 0 11px 0;
+	}
+	&__text {
+		margin: 0;
+		font-size: 16px;
+		color: #929292;
+		&._strong {
+			font-family: @heavy;
+			font-size: 24px;
+			color: #2b2b2d;
+		}
+		&._marg {
+			margin: 8px 13px 0 24px;
+			vertical-align: top;
+			display: inline-block;
+		}
+	}
+	&__phone {
+		font-size: 40px;
+		font-family: @heavy;
+		color: #383838;
+		display: inline-block;
+		margin: -9px 0 11px 0;
+		cursor: pointer;
+	}
+	&__email {
+		font-size: 18px;
+		border-bottom: 1px solid #759cc8;
+		display: inline-block;
+		line-height: 18px;
+		color: #146ab2;
+		font-family: @heavy;
+	}
+	&__call {
+		border: none;
+		background: #3f6aac;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		border-radius: 5px;
+		line-height: 40px;
+		width: 142px;
+		text-align: center;
+		margin: 0 0 0 0;
+		vertical-align: top;
+		-webkit-transition: background 0.4s ease;
+		-o-transition: background 0.4s ease;
+		-moz-transition: background 0.4s ease;
+		transition: background 0.4s ease;
+		&:hover {
+			background: lighten(#3f6aac, 10%);
+		}
+	}
+	//  форма по клику на кнопку перезвоните мне на карте
+	&__form-section {
+		background: url(../img/form_bg.jpg) center center no-repeat;
+	    height: 100%;
+	    background-size: cover;
+	    text-align: center;
+	    padding: 109px 0 0 0;
+	    box-sizing: border-box;
+	    display: none;
+	}
+	&__close {
+		position: absolute;
+		background: url(../img/close.png) 0 0 no-repeat;
+		width: 30px;
+		height: 30px;
+		top: 10px;
+		cursor: pointer;
+		right: 87px;
+		z-index: 10;
+		-webkit-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		&:hover {
+			-moz-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+	&__form-text {
+		color: #fff;
+		font-size: 22px;
+		margin: 0 0 38px 0;
+		line-height: 35px;
+		padding: 0 17%;
+	}
+	&__half-block {
+		width: 43%;
+	    display: inline-block;
+	    vertical-align: top;
+	    margin: 0 12px 20px 6px;
+	}
+	&__input {
+		border: 3px solid #fff;
+		box-sizing: border-box;
+		outline: none;
+		border-radius: 5px;
+		display: block;
+		color: #fff;
+		font-size: 22px;
+		height: 51px;
+		margin: 0 0px 21px 0;
+		font-weight: bold;
+		width: 100%;
+		padding: 0 20px;
+		background: transparent;
+		&::-webkit-input-placeholder {color:#fff;}
+		&::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+		&:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+		&:-ms-input-placeholder      {color:#fff;}
+	}
+	&__message {
+		float: right;
+		outline: none;
+		background: transparent;
+		width: 100%;
+		border: 3px solid #fff;
+		box-sizing: border-box;
+		height: 195px;
+		border-radius: 5px;
+		font-size: 22px;
+		font-weight: bold;
+		resize: none;
+		color: #fff;
+		padding: 5px 20px;
+		vertical-align: top;
+		&::-webkit-input-placeholder {color:#fff;}
+		&::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+		&:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+		&:-ms-input-placeholder      {color:#fff;}
+	}
+	&__submit {
+		color: #fff;
+		display: inline-block;
+		font-size: 22px;
+		font-weight: 600;
+		text-align: center;
+		width: 266px;
+		margin-left: 27px;
+		border-radius: 10px;
+		border: 4px solid #ececec;
+		box-shadow: 5px 5px 0px #428bce;
+		position: relative;
+		line-height: 67px;
+		font-family: @heavy;
+		background: #dd3f2b;
+		-webkit-transition: background 0.4s ease;
+		-o-transition: background 0.4s ease;
+		-moz-transition: background 0.4s ease;
+		transition: background 0.4s ease;
+		&:hover {
+			border-bottom: 4px solid #ececec;
+			background: darken(#dd3f2b, 10%);
+		}
 	}
 }
