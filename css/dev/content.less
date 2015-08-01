@@ -9,15 +9,12 @@
 	}
 	&__title {
 		font-family: @heavy;
-		line-height: 60px;
 		margin: 0 0 40px 0;
 		&._white {
 			color: #fff;
 		}
 		&._upper {
 			text-transform: uppercase;
-			font-size: 60px;
-			line-height: 66px;
 		}
 	}
 	&__title-link {
@@ -120,13 +117,8 @@
 		color: #bb3c2c;
 	}
 	&__second-title {
-		font-size: 40px;
 		font-family: @heavy;
 		margin: 0 0 18px 0;
-		line-height: 48px;
-		&._sizeL {
-			font-size: 60px;
-		}
 		&._whiteUpper {
 			text-transform: uppercase;
 			color: #fff;
@@ -139,7 +131,6 @@
 	}
 	&__text {
 		margin: 0 0 30px 0;
-		font-size: 22px;
 	}
 	&__line {
 		line-height: normal;
@@ -275,30 +266,16 @@
 .advantages {
 	&__block {
 		background: #fafafa;
+		clear: both;
 		padding: 30px 0 58px 0;
-	}
-	&__list {
-		padding: 0;
-		margin: 0 0 0 -37px;
 	}
 	&__item {
 		display: inline-block;
 		text-align: center;
-		width: 25%;
 		position: relative;
 		vertical-align: top;
 	    padding: 0px 26px;
-	    margin-right: -19px;
 		box-sizing: border-box;
-		&:first-child {
-			width: 29%;
-		    padding: 0px 45px;
-		}
-	}
-	&__image {
-		position: absolute;
-		top: 0;
-		right: 0;
 	}
 	&__title {
 		text-transform: uppercase;
@@ -372,7 +349,6 @@
 //  база знаний на главной
 .base {
 	&__block {
-		float: right;
 		margin: 0;
 		vertical-align: top;
 		display: inline-block;
@@ -393,8 +369,14 @@
 	&__item {
 		border-bottom: 1px solid #e5e5e5;
 		padding: 12px 0;
+		position: relative;
 		&:last-child {
 			border-bottom: none;
+		}
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
 		}
 	}
 	&__main-link {
@@ -468,7 +450,6 @@
 			position: absolute;
 			content: '';
 			background: url(../img/action_bg.png) 0 0 no-repeat;
-			width: 1224px;
 			height: 451px;
 			top: 4px;
 			left: -76px;
@@ -579,15 +560,10 @@
 		}
 	}
 	&__inner-title {
-		font-size: 40px;
 		font-weight: 600;
 		line-height: 59px;
 		i {
 			font-weight: 400;
-		}
-		&._margin-line {
-			margin: 15px 0;
-			line-height: 44px;
 		}
 	}
 	&__red {
@@ -654,9 +630,6 @@
 	&__list {
 		margin: 60px 0 40px 0;
 	}
-	&__inner {
-		padding-left: @padleft;
-	}
 	&__item {
 		display: inline-block;
 		vertical-align: top;
@@ -665,12 +638,10 @@
 		margin: 0 0 20px 0;
 	}
 	&__name {
-		font-size: 24px;
 		margin: 0 0 -5px 0;
 		font-weight: bold;
 	}
 	&__post {
-		font-size: 20px;
 		color: #8e8e8e;
 		margin: 0;
 	}
@@ -787,7 +758,6 @@
 	}
 	&__item {
 		position: relative;
-		display: inline-block;
 		vertical-align: top;
 		padding: 20px;
 		box-sizing: border-box;
@@ -973,8 +943,6 @@
 		padding: 43px 0 10px 0;
 	}
 	&__text {
-		font-size: 24px;
-		margin: 28px 0 42px 0;
 		padding: 0 84px;
 		line-height: 35px;
 	}
@@ -1081,7 +1049,6 @@
 		height: 300px;
 		top: -149px;
 		left: 0;
-		z-index: 1;
 	}
 	&__sky-bottom {
 		position: absolute;
@@ -1095,13 +1062,10 @@
 	}
 	&__modal {
 		border: 2px solid #fcfcfc;
-		width: 455px;
-		height: 364px;
 		position: absolute;
 		top: 61px;
 		left: @padleft;
 		background: #f5f5f5;
-		padding: 44px 6px 44px 33px;
 		box-sizing: border-box;
 		border-radius: 38px;
 		z-index: 3;
@@ -1364,7 +1328,6 @@
 // блок с картинкой в отзывах справа
 .video {
 	&__block {
-		margin: -40px -80px 0 0px;
 		float: right;
 		padding: 45px 27px 45px 33px;
 		width: 360px;
