@@ -1,12 +1,15 @@
 // блок с картой на главной
+.content__block {
+	overflow: hidden;
+}
 .main {
 	&__map-block {
 		text-align: center;
 		margin-bottom: 69px;
 	}
 	&__title {
-		font-size: 50px;
 		font-family: @heavy;
+		line-height: 60px;
 		margin: 0 0 40px 0;
 		&._white {
 			color: #fff;
@@ -37,7 +40,7 @@
 		-webkit-background-clip: text;
 		color: transparent;
 		font-size: 35px;
-		margin: 0 0 0 -5px;
+		margin: 0 0 10px -5px;
 		width: 36px;
 		line-height: 52px;
 		font-family: @unisans;
@@ -175,7 +178,6 @@
 		&:before {
 			content: '';
 			position: absolute;
-			left: -68px;
 			top: 15px;
 			width: 17px;
 			height: 2px;
@@ -203,7 +205,7 @@
 		line-height: 22px;
 		font-size: 22px;
 		display: inline-block;
-		margin: 0 17px 10px 17px;
+		margin: 0 17px 20px 17px;
 	}
 	&__category-active {
 		color: #434343;
@@ -273,7 +275,6 @@
 .advantages {
 	&__block {
 		background: #fafafa;
-		margin: 81px 0 141px 0;
 		padding: 30px 0 58px 0;
 	}
 	&__list {
@@ -291,12 +292,11 @@
 		box-sizing: border-box;
 		&:first-child {
 			width: 29%;
-		    padding: 0px 48px;
+		    padding: 0px 45px;
 		}
 	}
 	&__image {
 		position: absolute;
-		min-height: 327px;
 		top: 0;
 		right: 0;
 	}
@@ -304,18 +304,15 @@
 		text-transform: uppercase;
 		font-size: 22px;
 		font-family: @heavy;
-		margin: 324px 0 0 0;
 	}
 	&__text {
 		font-size: 16px;
-		line-height: 28px;
 		margin: 0;
 	}
 }
 // превьюшка отзывов
 .preview {
 	&__feedback {
-		width: 652px;
 		position: relative;
 		display: inline-block;
 	}
@@ -331,7 +328,6 @@
 		line-height: 30px;
 		min-height: 237px;
 		margin: 0;
-		padding: 28px 221px 18px 34px;
 		&:after {
 			position: absolute;
 			content: '';
@@ -378,7 +374,6 @@
 	&__block {
 		float: right;
 		margin: 0;
-		width: 384px;
 		vertical-align: top;
 		display: inline-block;
 		position: relative;
@@ -477,7 +472,7 @@
 			height: 451px;
 			top: 4px;
 			left: -76px;
-			z-index: 0;
+			z-index: -1;
 			right: 0;
 			display: block;
 			margin: auto;
@@ -564,11 +559,9 @@
 	}
 	&__image {
 		float: left;
-		margin: 0 20px 20px -27px;
 	}
 	&__inner {
 		margin-bottom: 40px;
-		width: 879px;
 		margin: 14px 0 28px -30px;
 		height: 289px;
 		overflow: hidden;
@@ -583,7 +576,6 @@
 		}
 		&._answer {
 			background: url(../img/answer_text-bg.png) 0 0 no-repeat;
-			padding: 2em 60px 3em 106px;
 		}
 	}
 	&__inner-title {
@@ -615,11 +607,8 @@
 	&__btn {
 		color: #fff;
 		display: inline-block;
-		font-size: 22px;
 		font-weight: 600;
 		text-align: center;
-		width: 284px;
-		margin-left: 27px;
 		border-radius: 10px;
 		border: 4px solid #ececec;
 		box-shadow: 5px 5px 0px #4292cb;
@@ -664,15 +653,12 @@
 	}
 	&__list {
 		margin: 60px 0 40px 0;
-		padding: 0 0 0 69px;
 	}
 	&__inner {
 		padding-left: @padleft;
 	}
 	&__item {
 		display: inline-block;
-		width: 24%;
-		margin-right: 8%;
 		vertical-align: top;
 	}
 	&__image {
@@ -747,7 +733,6 @@
 		float: right;
 		box-sizing: border-box;
 		width: 255px;
-	    margin: 0 -89px 0px 10px;
 	    &:after {
 	    	content: '';
 	    	position: absolute;
@@ -780,9 +765,6 @@
 	&__block {
 		margin-bottom: 104px;
 	}
-	&__list {
-		padding: 40px 120px 0 69px;
-	}
 	&__img {
 		vertical-align: top;
 		display: inline-block;
@@ -801,17 +783,14 @@
 		margin-bottom: 112px;
 	}
 	&__list {
-		padding-left: @padleft;
 		margin-top: 30px;
 	}
 	&__item {
 		position: relative;
 		display: inline-block;
-		margin-right: 2%;
 		vertical-align: top;
 		padding: 20px;
 		box-sizing: border-box;
-		width: 314px;
 		border-radius: 25px;
 		background: #f0f0f0;
 	}
@@ -881,7 +860,6 @@
 	}
 	&__img {
 		float: left;
-		margin: 0 0px 0 -80px;
 	}
 	&__inner {
 		border: 3px solid #e7e7e7;
@@ -894,7 +872,6 @@
 	&__data {
 		vertical-align: top;
 		display: inline-block;
-		padding: 20px 0 20px 48px;
 		position: relative;
 		border-radius: 10px 0 0 10px;
 		position: relative;
@@ -914,16 +891,13 @@
 	&__result {
 		vertical-align: top;
 		height: 100%;
-		width: 396px;
 		display: inline-block;
 		position: absolute;
 		background: #fafafa;
 		border-radius: 0 8px 8px 0;
-		padding: 40px 0 20px 78px;
 		box-sizing: border-box;
 	}
 	&__text {
-		font-size: 22px;
 		margin: 0;
 		display: inline-block;
 	}
@@ -943,7 +917,6 @@
 		}
 	}
 	&__select {
-		width: 283px;
 		border: 2px solid #e3e3e3;
 		background: #f4f4f4;
 		border-radius: 7px;
@@ -962,7 +935,6 @@
 	    font-size: 22px;
 	    font-weight: 600;
 	    text-align: center;
-	    width: 284px;
 	    border-radius: 10px;
 	    border: 4px solid #ececec;
 	    box-shadow: 5px 5px 0 #e1e1e1;
@@ -1031,7 +1003,6 @@
 			width: 153px;
 			height: 273px;
 			top: 0px;
-			left: -70px;
 		}
 	}
 	&__btn {
@@ -1138,11 +1109,12 @@
 	&__shadow {
 		position: absolute;
 		background: url(../img/modal_shadow.png) 0 0 no-repeat;
-		width: 625px;
+		width: 587px;
 		height: 529px;
-		top: -24px;
-		left: -8px;
+		top: -8px;
+		left: 5px;
 		z-index: 2;
+		background-size: 100%;
 	}
 	&__address {
 		margin: 25px 0 11px 0;
@@ -1363,12 +1335,14 @@
 		display: inline-block;
 		font-size: 22px;
 		color: #161616;
+		vertical-align: top;
 		&._price {
 			font-size: 40px;
 		}
 		&._title {
 			font-size: 18px;
 			color: #929292;
+			vertical-align: bottom;
 		}
 		&:nth-child(1) {
 			width: 73%;

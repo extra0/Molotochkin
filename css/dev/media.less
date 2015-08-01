@@ -2,12 +2,205 @@
 	.container {
 		width: 750px;
 	}
+	.main {
+		&__inner {
+			padding-left: 25px;
+		}
+	}
 }
+
+//  ========================================== 992px 
 @media (min-width: 992px) {
 	.container {
 		width: 970px;
 	}
+	.header {
+		&__menu {
+			margin: 18px 0 0 28px;
+			width: 160px;
+		}
+		&__menu-item {
+			width: 120px;
+			display: block;
+		}
+	}
+	.main {
+		&__title {
+			font-size: 44px;
+		}
+		&__inner {
+			width: 600px;
+			&._widthM {
+				width: 580px;
+			}
+		}
+		&__second-title {
+			div {
+				margin-top: 25px;
+			}
+		}
+		&__extra-item {
+			width: 40%;
+			margin:0 8% 50px 0;
+		}
+		&__item {
+			&:before {
+				left: -25px;
+			}
+		}
+	}
+	.advantages {
+		&__block {
+			margin: 81px 0;
+		}
+		&__image {
+			max-height: 250px;
+		}
+		&__title {
+			margin: 260px 0 0 0;
+			min-height: 70px;
+		}
+		&__text {
+			line-height: 25px;
+		}
+	}
+	.preview {
+		&__feedback-img {
+			display: none;
+		}
+		&__feedback-text {
+			width: 533px;
+		    padding: 28px 20px 18px 34px;
+		}
+	}
+	.base {
+		&__block {
+			width: 330px;
+		}
+	}
+	.action {
+		&__block {
+			background-size: 100%;
+		}
+	}
+	.footer {
+		&__item-one {
+			width: 40%;
+		}
+		&__menu {
+			&:before {
+				right: 100px;
+			}
+		}
+	}
+	.side {
+		&__block {
+			margin: 0 -10px 0 10px;
+		}
+	}
+	.people {
+		&__list {
+			padding: 0 0 0 25px;
+		}
+		&__item {
+			width: 30%;
+			margin-right: 3%;
+		}
+	}
+	.timeline {
+		&__image {
+			margin: -159px auto -89px auto;
+		}
+	}
+	.feedback {
+		&__list {
+			padding-left: 25px;
+		}
+		&__item {
+			margin-right: 1%;
+			width: 288px;
+		}
+		&__column-item {
+			margin-right: 20px;
+		}
+	}
+	.partner {
+		&__list {
+			padding: 40px 60px 0 69px;
+		}
+	}
+	.calculate {
+		&__progress-block {
+		    background-size: 48px 25px;
+			max-width: 937px;
+		}
+		&__progress-line {
+		    background-size: 48px 25px;
+		}
+		&__image {
+			margin: 0 20px 20px -52px;
+		}
+		&__inner {
+			width: 814px;
+			&._answer {
+				padding: 2em 24px 3em 84px;
+				background-size: 100%;
+			}
+			&._question {
+				background-size: 100%;
+				height: 250px;
+			}
+		}
+		&__btn {
+			width: 240px;
+			margin-left: 0;
+			margin-right: 10px;
+			font-size: 20px;
+		}
+	}
+	.freecall {
+		&__inner {
+			&:before {
+				left: -34px;	
+			}
+		}
+	}
+	.cost {
+		&__data {
+			padding: 20px 0 20px 25px;
+		}
+		&__result {
+			padding: 36px 0 20px 61px;
+		}
+		&__title,
+		&__text {
+			font-size: 18px;
+		}
+		&__btn {
+			width: 208px;
+		}
+		&__select {
+			font-size: 18px;
+			width: 299px;
+		}
+		&__img {
+			margin: 0 -25px 0 -115px;
+		}
+	}
+	.video {
+		&__block {
+			margin: -40px -25px 0 -30px;
+		}
+	}
 }
+
+
+
+
+
+
+
+//  ========================================== 1200px 
 @media (min-width: 1200px) {
 	.container {
 		width: 1170px;
@@ -19,10 +212,15 @@
 		}
 		&__menu-item {
 			width: 140px;
+			display: inline-block;
 		}
 	}
 	.main {
+		&__title {
+			font-size: 50px;
+		}
 		&__inner {
+			padding-left: @padleft;
 			width: 840px;
 			&._widthM {
 				width: 700px;
@@ -31,6 +229,16 @@
 		&__extra-item {
 			width: 302px;
 			margin: 0 50px 30px 0;
+		}
+		&__second-title {
+			div {
+				margin-top: 0;
+			}
+		}
+		&__item {
+			&:before {
+				left: -68px;
+			}
 		}
 	}
 	.timeline {
@@ -44,20 +252,172 @@
 		}
 	}
 	.cost {
+		&__title,
+		&__text {
+			font-size: 22px;
+		}
+		&__select {
+			width: 283px;
+		}
+		&__img {
+			margin: 0 0px 0 -80px;
+		}
 		&__data {
 			width: 47%;
+			padding: 20px 0 20px 48px;
+		}
+		&__btn {
+			width: 284px;
 		}
 		&__result {
+			padding: 40px 0 20px 78px;
 			width: 47.3%;
 		}
 	}
 	.feedback {
+		&__list {
+			padding-left: @padleft;
+		}
 		&__column {
 			width: 314px;
 			margin-right: 5%;
 		}
+		&__item {
+			margin-right: 2%;
+			width: 314px;
+		}
+		&__column-item {
+			margin-right: 0;
+		}
+	}
+	.action {
+		&__block {
+			background-size: 90%;
+		}
+	}
+	.advantages {
+		&__block {
+		    margin: 81px 0 141px 0;
+		}
+		&__image {
+			min-height: 327px;
+			max-height: none;
+		}
+		&__title {
+			margin: 324px 0 0 0;
+			min-height: auto;
+		}
+		&__text {
+			line-height: 28px;
+		}
+	}
+	.preview {
+		&__feedback {
+			width: 652px;
+		}
+		&__feedback-img {
+			display: block;
+		}
+		&__feedback-text {
+			padding: 28px 0 18px 36px;
+			width: 415px;
+		}
+	}
+	.base {
+		&__block {
+			width: 384px;
+		}
+	}
+	.footer {
+		&__item-one {
+			width: 30%;
+		}
+		&__menu {
+			&:before {
+				right: 60px;
+			}
+		}
+	}
+	.side {
+		&__block {
+			margin: 0 -89px 0px 10px;
+		}
+	}
+	.people {
+		&__list {
+			padding: 0 0 0 69px;
+		}
+		&__item {
+			width: 24%;
+			margin-right: 8%;
+		}
+	}
+	.partner {
+		&__list {
+			padding: 40px 120px 0 69px;
+		}
+	}
+	.calculate {
+		&__progress-block {
+			background-size: inherit;
+			max-width: none;
+		}
+		&__progress-line {
+			background-size: inherit;
+		}
+		&__image {
+			margin: 0 20px 20px -27px;
+		}
+		&__inner {
+			width: 879px;
+			&._answer {
+				padding: 2em 60px 3em 106px;
+				background-size: inherit;
+			}
+			&._question {
+				background-size: inherit;
+				height: 289px;
+			}
+		}
+		&__btn {
+			width: 284px;
+			margin-left: 27px;
+			margin-right: 0;
+			font-size: 22px;
+		}
+	}
+	.freecall {
+		&__inner {
+			&:before {
+				left: -70px;
+			}
+		}
+	}
+	.video {
+		&__block {
+			margin: -40px -80px 0 0px;
+		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  ========================================== 1450px 
 @media (min-width: 1450px) {
 	.container {
 		width: 1370px;

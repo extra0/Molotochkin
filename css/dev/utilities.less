@@ -10,8 +10,6 @@
 @unisans: 'Uni Sans', sans-serif;
 @padleft: 69px;
 
-
-
 html { height: 100%;}
 body {
     font-family: @main_font;
@@ -20,7 +18,10 @@ body {
     height: 100%;
     color: @main_color;
 }
-// .main-wrapper { min-height: 100%;}
+.main-wrapper { 
+    // min-height: 100%;
+    overflow: hidden;
+}
 .buffer {
     height: px;
     clear: both;
