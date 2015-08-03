@@ -150,6 +150,24 @@
 		&__inner {
 			padding-left: 25px;
 		}
+		&__contact {
+			&:before {
+				background-size: 72%;
+			}
+		}
+		&__phone {
+			font-size: 24px;
+		}
+		&__prefix {
+			font-size: 16px;
+			margin: 7px 7px 0 0;
+		}
+		&__email {
+			font-size: 13px;
+		}
+		&__service {
+			font-size: 16px;
+		}
 	}
 	.partner {
 		&__list {
@@ -211,8 +229,11 @@
 			display: none;
 		}
 		&__modal {
-			padding: 44px 6px 44px 33px;
+			padding: 0px 6px 27px 33px;
 			width: 455px;
+			> .local-form__text {
+				display: none;
+			}
 		}
 	}
 }
@@ -372,6 +393,26 @@
 		&__image {
 			max-height: none;
 		}
+		&__contact {
+			&:before {
+				background-size: contain;
+			}
+		}
+		&__phone {
+			font-size: 40px;
+		}
+		&__prefix {
+			margin: 15px 7px 0 0;
+		}
+		&__email {
+			font-size: 16px;
+		}
+		&__item {
+			margin-right: 5%;
+		}
+		&__service {
+			font-size: 18px;
+		}
 	}
 	.feedback {
 		&__list {
@@ -464,6 +505,9 @@
 		&__modal {
 			padding: 44px 6px 44px 33px;
 			height: 364px;
+			> .local-form__text {
+				display: block;
+			}
 		}
 	}
 }
