@@ -532,7 +532,11 @@
   background-size: 100%;
 }
 .slick-slide.slick-center + div {
-  left: 172px;
+  left: 172px!important;
+  position: relative;
+}
+.slick-track:first-child .slick-active:not(.slick-center) {
+  left: -172px;
   position: relative;
 }
 .slick-slide.slick-center > div > div {

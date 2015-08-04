@@ -1,6 +1,6 @@
 $(function() {
 
-	$('.slick-center').addClass('wwwwwwwwwww');
+
 	
 	// ф-я разбивки на разряды
 	function numberWithCommas(x) {
@@ -98,7 +98,6 @@ $(function() {
 	    }
 	  ]
 	});
-
 
 	// яндекс карта 
 	ymaps.ready(function() {
