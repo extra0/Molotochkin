@@ -264,6 +264,22 @@
 			}
 		}
 	}
+	.freecall {
+		&__text {
+			padding: 0;
+			line-height: normal;
+		}
+		&__inner {
+			&:before {
+				display: none;
+			}
+		}
+		&__input {
+			width: 100%;
+			display: block;
+			font-size: 18px;
+		}
+	}
 }
 
 @media (min-width: 450px) and (max-width: 767px) {
@@ -841,7 +857,7 @@
 			margin: 0 -19px 0 0;
 			&:first-child {
 				width: 29%;
-			    padding: 0px 45px;
+			    padding: 0px 42px;
 			}
 		}
 		&__list {

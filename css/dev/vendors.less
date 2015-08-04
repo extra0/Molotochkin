@@ -524,26 +524,32 @@
   -o-transform: scale(1.75);
   -webkit-transform: scale(1.75);
   transform: scale(1.75);
-  -webkit-transition: all 0.55s ease;
-  -o-transition: all 0.55s ease;
-  -moz-transition: all 0.55s ease;
-  transition: all 0.55s ease;
   z-index: 2;
-  padding: 115px 47px;
+  padding: 114px 44px 115px 38px;
   opacity: 1;
   position: relative;
   background: url(../img/slider_bg.png) 0px 61px no-repeat;
   background-size: 100%;
 }
+.slick-slide.slick-center + div {
+  left: 172px;
+  position: relative;
+}
+.slick-slide.slick-center > div > div {
+  background: none;
+  padding: 0;
+  margin-top: 0;
+  border: 2px solid transparent;
+}
 
 .slick-slide.slick-center .video-slider__autor-block {
-  -moz-transform: scale(0.6);
-  -ms-transform: scale(0.6);
-  -o-transform: scale(0.6);
-  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.63);
+  -ms-transform: scale(0.63);
+  -o-transform: scale(0.63);
+  -webkit-transform: scale(0.63);
   transform: scale(0.6);
-  margin-left: -69px;
-  margin-top: -10px;
+  margin-left: -64px;
+  margin-top: -4px;
 }
 
 /* Arrows */
@@ -552,7 +558,7 @@
   font-size: 0;
   line-height: 0;
   position: absolute;
-  top: 50%;
+  top: 42%;
   display: block;
   width: 32px;
   height: 40px;
@@ -564,15 +570,16 @@
   outline: none;
   background: transparent;
   background: url(../img/arrows.png) 0 0 no-repeat;
+  z-index: 100;
 }
 
 .slick-prev {
-  left: -25px;
+  left: 225px;
   background-position: 0px -77px;
 }
 
 .slick-next {
-  right: -25px;
+  right: 225px;
   background-position: -53px -77px;
 }
 
