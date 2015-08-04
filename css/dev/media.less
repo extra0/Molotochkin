@@ -210,6 +210,26 @@
 			font-size: 14px;
 			margin: 0 10px 10px 0;
 		}
+		&__phone {
+			font-size: 31px;
+		}
+		&__prefix {
+			margin: 12px 7px 0 0px;
+		}
+		&__contact {
+			&:before {
+				width: 286px;
+				height: 95px;
+				background-size: 100% 100%;
+				left: -37px;
+			}
+		}
+		&__email {
+			font-size: 16px;
+		}
+		&__contact {
+			display: inline-block;
+		}
 	}
 	.partner {
 		&__img {
@@ -278,6 +298,75 @@
 			width: 100%;
 			display: block;
 			font-size: 18px;
+			line-height: 50px;
+			margin-bottom: 30px;
+		}
+		&__btn {
+			margin-left: 0;
+			line-height: 50px;
+		}
+	}
+	.local-form {
+		&__form-section {
+			padding: 41px 0 0 0;
+		}
+		&__form-text {
+			padding: 0;
+			font-size: 17px;
+			line-height: normal;
+		}
+		&__close {
+			right: 17px;
+			top: 3px;
+		}
+		&__half-block {
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		&__message {
+			font-size: 16px;
+			float: none;
+			height: 145px;
+		}
+		&__submit {
+			margin-left: 0;
+			line-height: 54px;
+		}
+		&__input {
+			font-size: 16px;
+		}
+		&__sky-bottom {
+			display: none;
+		}
+		&__modal {
+			padding: 20px;
+			width: 270px;
+			top: 51px;
+			left: 49px;
+		}
+		&__text {
+			font-size: 13px;
+			&._strong {
+				font-size: 15px;
+			}
+		}
+		&__phone {
+			font-size: 30px;
+		}
+		&__call {
+			margin: -10px 0 10px 0;
+		}
+		&__address {
+			margin: 5px 0 11px 0;
+		}
+		&__shadow {
+			display: none;
+		}
+		&__change {
+			&:before {
+				top: 0;
+			}
 		}
 	}
 }
@@ -386,7 +475,7 @@
 	.people {
 		&__item {
 			display: inline-block;
-			margin: 0 41px;
+			margin: 0 52px 40px 52px;
 			width: 31%;
 		}
 		&__link {
