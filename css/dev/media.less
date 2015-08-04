@@ -1,3 +1,10 @@
+@media (max-width: 767px) {
+	
+}
+
+
+
+//  ======================================================= 768
 @media (min-width: 768px) {
 	.container {
 		width: 750px;
@@ -60,6 +67,18 @@
 			}
 			div {
 				margin-top: 25px;
+			}
+		}
+		&__extra-item {
+			width: 27%;
+			margin:0 5% 50px 0;
+		}
+		&__item {
+			font-size: 16px;
+			margin-bottom: 16px;
+			&:before {
+				left: -25px;
+				top: 10px;
 			}
 		}
 	}
@@ -177,7 +196,9 @@
 	.feedback {
 		&__item {
 			display: block;
-			margin-bottom: 94px;
+		}
+		&__column-item {
+			margin-bottom: 35px;
 		}
 	}
 	.calculate {
@@ -236,16 +257,87 @@
 			}
 		}
 	}
+	.price{
+		&__item {
+			font-size: 18px;
+			&._price {
+				font-size: 30px;
+			}
+			&._title {
+				font-size: 18px;
+				vertical-align: bottom;
+			}
+			&:nth-child(1) {
+				width: 63%;
+			}
+			&:nth-child(2) {
+				text-align: right;
+				width: 10%;
+			}
+			&:nth-child(3) {
+				width: 25%;
+				text-align: right;
+				margin-top: -8px;
+			}
+		}
+	}
+	.cost {
+		&__block {
+			margin: 15px 0 25px 0;
+		}
+		&__img {
+			width: 43%;
+			margin: 0 -50px 0 -90px;
+		}
+		&__data {
+			padding: 14px 0 14px 17px;
+			&:before {
+				right: -30px;
+			    border-top: 86px solid transparent;
+			    border-left: 30px solid #fff;
+			    border-bottom: 86px solid transparent;
+			}
+		}
+		&__input {
+			font-size: 22px;
+			width: 80px;
+			&._half {
+				width: 50px;
+			}
+		}
+		&__select {
+			font-size: 15px;
+			width: 196px;
+			height: 38px;
+		}
+		&__table-item {
+			padding: 0 10px 10px 0;
+		}
+		&__title,
+		&__text {
+			font-size: 16px;
+		}
+		&__result {
+			padding: 20px 27px 20px 42px;
+		}
+		&__currency,
+		&__price {
+			font-size: 28px;
+			margin-bottom: 10px;
+		}
+		&__btn {
+			width: 138px;
+		    line-height: 44px;
+		    font-size: 18px;
+		}
+	}
+	.video {
+		&__block {
+			margin: 0 -40px 0 0px;
+		}
+	}
 }
-
-
-
-
-
-
-
-
-//  ========================================== 992px 
+//  ============================================================ 992px 
 @media (min-width: 992px) {
 	.container {
 		width: 970px;
@@ -286,6 +378,7 @@
 			line-height: 60px;
 			&._upper {
 				font-size: 60px;
+				line-height: 60px;
 			}
 			&._white {
 				font-size: 44px;
@@ -298,13 +391,12 @@
 				width: 580px;
 			}
 		}
-		&__extra-item {
-			width: 40%;
-			margin:0 8% 50px 0;
-		}
 		&__item {
+			font-size: 22px;
+			margin-bottom: 30px;
 			&:before {
 				left: -25px;
+				top: 15px;
 			}
 		}
 		&__text {
@@ -417,15 +509,18 @@
 	.feedback {
 		&__list {
 			padding-left: 25px;
+			margin-right: -25px;
 		}
 		&__item {
-			margin-right: 1%;
-			width: 288px;
 			display: inline-block;
 			margin-bottom: 0;
 		}
 		&__column-item {
-			margin-right: 20px;
+			width: 288px;
+			margin-bottom: 20px;
+		}
+		&__column {
+			margin-right: 2%;
 		}
 	}
 	.calculate {
@@ -469,11 +564,20 @@
 		}
 	}
 	.cost {
+		&__block {
+			margin: 50px 0 100px 0;
+		}
 		&__data {
 			padding: 20px 0 20px 25px;
+			&:before {
+				right: -50px;
+				border-top: 136px solid transparent;
+				border-left: 50px solid #fff;
+				border-bottom: 136px solid transparent;
+			}
 		}
 		&__result {
-			padding: 36px 0 20px 61px;
+			padding: 36px 34px 20px 61px;
 		}
 		&__title,
 		&__text {
@@ -481,6 +585,8 @@
 		}
 		&__btn {
 			width: 208px;
+			line-height: 67px;
+			font-size: 22px;
 		}
 		&__select {
 			font-size: 18px;
@@ -488,6 +594,26 @@
 		}
 		&__img {
 			margin: 0 -25px 0 -115px;
+			width: auto;
+		}
+		&__table-item {
+			padding: 0 23px 20px 0;
+		}
+		&__input {
+			width: 120px;
+			font-size: 36px;
+			&._half {
+				width: 70px;
+			}
+		}
+		&__select {
+			height: 52px;
+			font-size: 22px;
+		}
+		&__price,
+		&__currency {
+			font-size: 40px;
+			margin-bottom: 20px;
 		}
 	}
 	.video {
@@ -510,31 +636,28 @@
 			}
 		}
 	}
+	.price{
+		&__item {
+			font-size: 22px;
+			&._price {
+				font-size: 40px;
+			}
+			&._title {
+				font-size: 18px;
+				color: #929292;
+				vertical-align: bottom;
+			}
+			&:nth-child(1) {
+				width: 73%;
+			}
+			&:nth-child(3) {
+				width: 16%;
+				margin-top: -8px;
+			}
+		}
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  ========================================== 1200px 
+//  ================================================================= 1200px 
 @media (min-width: 1200px) {
 	.container {
 		width: 1170px;
@@ -611,6 +734,7 @@
 	.feedback {
 		&__list {
 			padding-left: @padleft;
+			margin-right: -69px;
 		}
 		&__column {
 			width: 314px;
@@ -736,7 +860,7 @@
 		}
 	}
 }
-//  ========================================== 1450px 
+//  ================================================================= 1450px 
 @media (min-width: 1450px) {
 	.container {
 		width: 1370px;
