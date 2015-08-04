@@ -1,7 +1,5 @@
 $(function() {
 
-
-	
 	// ф-я разбивки на разряды
 	function numberWithCommas(x) {
 		return x.toString().replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g, "\$1 ");
