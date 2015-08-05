@@ -74,28 +74,13 @@ $(function() {
 	  centerMode: true,
 	  centerPadding: '0px',
 	  speed: 500,
-	  slidesToShow: 3,
-	  responsive: [
-	    {
-	      breakpoint: 768,
-	      settings: {
-	        arrows: false,
-	        centerMode: true,
-	        centerPadding: '40px',
-	        slidesToShow: 3
-	      }
-	    },
-	    {
-	      breakpoint: 480,
-	      settings: {
-	        arrows: false,
-	        centerMode: true,
-	        centerPadding: '40px',
-	        slidesToShow: 1
-	      }
-	    }
-	  ]
+	  slidesToShow: 3
 	});
+
+	var width = $(window).width(); 
+    if (width < 767) {
+        $('.slick_slider').slick('unslick');
+    }
 
 	// яндекс карта 
 	ymaps.ready(function() {
