@@ -1461,3 +1461,64 @@
 		margin: 10px 0;
 	}
 }
+// страница блока знаний
+.knows {
+	&__block {
+		padding: 5px 0 41px 65px;
+		border-bottom: 1px solid #e7e7e7;
+		margin-bottom: 33px;
+	}
+	&__link {
+		color: #4674cf;
+		font-family: 'Fira Heavy';
+		border-bottom: 2px solid;
+		font-size: 143%;
+		&:hover {
+			border-bottom: 2px solid transparent;
+		}
+	}
+	&__date {
+		font-size: 22px;
+		color: #a4a4a4;
+		margin: 9px 0 13px 0;
+	}
+	&__img {
+		margin: 0 0 16px 0;
+	}
+	&__text {
+		font-size: 22px;
+		margin: 0 0 28px 0;
+	}
+	&__readmore {
+		display: inline-block;
+		line-height: 21px;
+		font-size: 22px;
+		color: #4674cf;
+		border-bottom: 1px solid;
+	}
+	&__line {
+		font-size: 200%;
+		line-height: normal;
+	}
+	&__show-more {
+		margin: 60px 0 80px 0;
+	}
+	&__show-more-link {
+		border-bottom: 1px dotted;
+		color: #000;
+		font-size: 40px;
+		display: inline-block;
+		line-height: 33px;
+		margin-left: 65px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 33px;
+			height: 1px;
+			background: #000;
+			top: 13px;
+			left: -65px;
+		}
+	}
+}
