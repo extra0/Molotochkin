@@ -92,16 +92,19 @@ $(function() {
 	});
 
 	// таймер обратного отсчета
-	// $('#countdown_dashboard').countDown({
-	// 	targetDate: {
-	// 		'day': 29,
-	// 		'month': 8,
-	// 		'year': 2015,
-	// 		'hour': 23,
-	// 		'min': 0,
-	// 		'sec': 0
-	// 	}
-	// });
+	$('#countdown_dashboard').countDown({
+		targetDate: {
+			'day': 29,
+			'month': 8,
+			'year': 2015,
+			'hour': 23,
+			'min': 0,
+			'sec': 0
+		}
+	});
+
+	// маска на телефон
+	$('.mask').mask('+7 (999) 999-99-99');
 
 	// яндекс карта 
 	ymaps.ready(function() {
