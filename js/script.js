@@ -77,11 +77,6 @@ $(function() {
 	  slidesToShow: 3
 	});
 
-	var width = $(window).width(); 
-    if (width < 767) {
-        $('.slick_slider').slick('unslick');
-    }
-
 	// яндекс карта 
 	ymaps.ready(function() {
 		var myMap = new ymaps.Map('map', {
@@ -300,5 +295,23 @@ $(function() {
 
 		myMap.geoObjects.add(myPlacemark);
 	});
+
+	// стилизируем файл инпут
+	$('.file').styler();
+
+	// вызов табов
+	$('.tabs').tabs({
+		active: 2,
+		show: {
+			effect: "fade",
+			duration: 800
+		}
+	});
+
+	var width = $(window).width(); 
+    if (width < 767) {
+        $('.slick_slider').slick('unslick');
+    }
+
 
 });

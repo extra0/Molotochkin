@@ -1,0 +1,24 @@
+extends _layout
+block content
+	.main__section
+		.container
+			h1.main__title._upper Добавление хорошего отзыва
+			.feedback__inner-block
+				.tabs
+					ul.feedback__tab-list
+						li.feedback__tab-item
+							a.feedback__tab-link(href="#text") Текстовый отзыв
+						li.feedback__tab-item
+							a.feedback__tab-link(href="#video") Видеоотзыв
+					.feedback__tab-block#text
+						form.feedback__form(action="#" method="post")
+							input.feedback__input(type="text" placeholder="Ваше имя" required)
+							input.feedback__input.file(type="file" data-browse="Ваше фото" data-placeholder="" required)
+							textarea.feedback__message(placeholder="И как вам Молоточкин?" required)
+							button.cost__btn(type="submit") Отправить
+					.feedback__tab-block#video
+						form.feedback__form(action="#" method="post")
+							input.feedback__input(type="text" placeholder="Ваше имя" required)
+							input.feedback__input.file._video(type="file" data-browse="Ваше видео" data-placeholder="" required)
+							textarea.feedback__message(placeholder="И как вам Молоточкин?" required)
+							button.cost__btn(type="submit") Отправить
