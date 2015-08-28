@@ -559,6 +559,9 @@
 		}
 		&__img {
 			max-height: 230px;
+			&._fl-left {
+				float: none;
+			}
 		}
 		&__text,
 		&__readmore,
@@ -1825,5 +1828,16 @@
 			width: 48.2%;
 			padding: 40px 0 20px 128px;
 		}
+	}
+}
+@media (min-width: 1200px) {
+	.buffer {
+	    height: 288px;
+	    clear: both;
+	}
+	.footer {
+	    height: 288px;
+	    box-sizing: border-box;
+	    margin-top: -288px;
 	}
 }

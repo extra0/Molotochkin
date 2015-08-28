@@ -1467,6 +1467,10 @@
 		padding: 5px 0 41px 65px;
 		border-bottom: 1px solid #e7e7e7;
 		margin-bottom: 33px;
+		&._no-line {
+			border-bottom: none;
+			margin-bottom: 180px;
+		}
 	}
 	&__link {
 		color: #4674cf;
@@ -1483,7 +1487,10 @@
 		margin: 9px 0 13px 0;
 	}
 	&__img {
-		margin: 0 0 16px 0;
+		margin: 0 20px 16px 0;
+		&._fl-left {
+			float: left;
+		}
 	}
 	&__text {
 		font-size: 22px;
@@ -1519,6 +1526,25 @@
 			background: #000;
 			top: 13px;
 			left: -65px;
+		}
+	}
+	&__back-link {
+		position: relative;
+		display: inline-block;
+		color: #4674cf;
+		line-height: 20px;
+		font-size: 22px;
+		border-bottom: 1px solid;
+		margin-left: 30px;
+		margin-bottom: 25px;
+		&:before {
+			content: '';
+			position: absolute;
+			background: url(../img/left-arrow.png) 0 0 no-repeat;
+			width: 22px;
+			height: 9px;
+			top: 4px;
+			left: -30px;
 		}
 	}
 }
