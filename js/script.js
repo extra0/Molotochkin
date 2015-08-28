@@ -35,47 +35,73 @@ $(function() {
 		summ = 0;
 
 	function calc() {
-		input.each(function(){
+		input.each(function() {
 			summ += $(this).val() * $(this).attr('data-val');
 		});
 		total.html(summ);
 		total.html(numberWithCommas(total.html()));
 	}
 
-	input.keyup('change', function(){
+	input.keyup('change', function() {
 		summ = 0;
-		select.each(function(){
+		select.each(function() {
 			summ += parseInt($(this).val());
 		});
 		calc();
 	});
 
-	select.change(function(){
+	select.change(function() {
 		summ = 0;
 		summ += parseInt($(this).val());
 		calc();
 	});
-	
+
 
 	// меняем карту и форму местами в контактах
-	$('.change').click(function(){
+	$('.change').click(function() {
 		if ($('.local-form__local-section').is(':visible')) {
 			$('.freecall__change').html('Пишите, не стесняйтесь');
 		} else {
 			$('.freecall__change').html('Тут Вы узнаете где находится Молоточкин');
 		}
-		
+
 		$('.local-form__local-section').slideToggle(500);
 		$('.local-form__form-section').slideToggle(500);
 	});
 
 	// вызов слайдера в отзывах
 	$('.slick_slider').slick({
-	  centerMode: true,
-	  centerPadding: '0px',
-	  speed: 500,
-	  slidesToShow: 3
+		centerMode: true,
+		centerPadding: '0px',
+		speed: 500,
+		slidesToShow: 3
 	});
+
+	// открываем модальное по клику Алло молоточкин
+	$('.action__btn').click(function() {
+		$('body').prepend('<div class="wrap"></div>');
+		$('.modal__window').fadeIn(500);
+		return false;
+	});
+
+	// закрываем модальное
+	$('.modal__close').click(function() {
+		$('.wrap').remove();
+		$('.modal__window').fadeOut(500);
+		return false;
+	});
+
+	// таймер обратного отсчета
+	// $('#countdown_dashboard').countDown({
+	// 	targetDate: {
+	// 		'day': 29,
+	// 		'month': 8,
+	// 		'year': 2015,
+	// 		'hour': 23,
+	// 		'min': 0,
+	// 		'sec': 0
+	// 	}
+	// });
 
 	// яндекс карта 
 	ymaps.ready(function() {
@@ -196,7 +222,7 @@ $(function() {
 
 
 
-			.add(new ymaps.Placemark([54.777697023347606, 37.70197299999995], {
+		.add(new ymaps.Placemark([54.777697023347606, 37.70197299999995], {
 				hintContent: 'Собственный значок метки'
 			}, {
 				iconLayout: 'default#image',
@@ -301,17 +327,17 @@ $(function() {
 
 	// вызов табов
 	$('.tabs').tabs({
-		active: 2,
+		active: 0,
 		show: {
 			effect: "fade",
 			duration: 800
 		}
 	});
 
-	var width = $(window).width(); 
-    if (width < 767) {
-        $('.slick_slider').slick('unslick');
-    }
+	var width = $(window).width();
+	if (width < 767) {
+		$('.slick_slider').slick('unslick');
+	}
 
 
 });

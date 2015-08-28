@@ -101,6 +101,30 @@ block content
 				.action__block
 					p.action__big-title Чего тут думать?
 					h2.main__second-title 20% скидка только 5 дней! 
-						span.main__text-red Осталось <script src="http://megatimer.ru/s/5b5bfa60dc1bce20f893abaeb91e6bf9.js"></script>
+						span.main__text-red Осталось
+					div.main__timer
+						#countdown_dashboard
+							.dash.days_dash
+								span.dash_title Дней
+								.digit 0
+								.digit 0
+							.dash.hours_dash
+								span.dash_title Часов
+								.digit 0
+								.digit 0
+							.dash.minutes_dash
+								span.dash_title Минут
+								.digit 0
+								.digit 0	
 					p.action__text Оставьте заявку и наши менеджеры свяжутся с вами в ближайшее<br>время для уточнения деталей, а так же для согласования<br>специального предложения
 					a.action__btn(href="#") - Алло, Молоточкин!?
+					.modal__window
+						.modal__window-inner
+							span.modal__close
+							h3.modal__title Aлло, молоточкин!
+							p.modal__text Если вам долго отвечают на ваше сообщение терроризируйте сразу наших менеджеров, вдруг это просто техническая не поладка, а вы без ответа.
+							form.modal__form(action="#" method="post")
+								input.modal__input(type="text" placeholder="Ваше имя" required)
+								input.modal__input.mask(type="text" placeholder="Ваш телефон" required)
+								textarea.modal__message(placeholder="Ваше сообщение" reqiured)
+								button.cost__btn(type="submit") Отправить
